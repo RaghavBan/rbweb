@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+      height: 100vh;
+      width: 100%;
+      background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/preview-happy-diwali-oil-lamps-lit-on-colorful-rangoli-during-diwali-celebration-stock-photo-1698842181.jpg);
+      background-position: center;
+      background-size: cover;
+      color: white;
+}
+.header .row {
+    margin-top: 70px;
+}
+nav {
+    height: 80px;
+    background-color: rgba(0,0,0,.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+nav .logo {
+    font-size: 33px;
+    color: #fff;
+    font-weight: 600; 
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 10%; 
+}
+nav ul li {
+    margin: 0 5px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+nav ul li a:hover {
+    color: cyan;
+}
+nav ul li a.active {
+    color: #1b1b1b;
+    background: #fff;
+}
+nav .menu-btn i {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+#click {
+    display: none;
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    padding-left: 70px;
+}
+.col-2 img {
+    max-width: 80%;
+    cursor: pointer;
+}
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.categories {
+    margin: 70px 0;
+}
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img {
+    width: 100%;
+    height: 300px;
+}
+.small_container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img {
+    width: 100%;
+    cursor: pointer;
+    height: 250px;
+}
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 80px;
+    color: #555;
+}
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p {
+    font-size: 14px;
+}
+.rating .fa {
+    color: #ff523b;
+}
+.col-4:hover {
+    transform: translateY(-9px);
+}
+.offer-btn,
+.btn {
+    display: block;
+    background: linear-gradient(#ff523b, #dac613);
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 30%;
+}
+.btn {
+    width: 33%;
+}
+.offer-btn:hover,
+.btn:hover {
+    color: #fff;
+    background: linear-gradient(#ff523b, #dac613);
+    box-shadow: 0 0 10px #ff523b, 0 0 40px #dac613, 0 0 80px #ff523b;
+    letter-spacing: 1px;
+    transform: translateY(-5px);
+}
+/* offer/exclusive */
+.offer img {
+    transition: transform 0.3s ease;
+}
+.offer img:hover {
+    transform: translateY(-10px);
+}
+.offer {
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img {
+    padding: 50px;
+}
+small {
+    color: #555;
+}
+
+/* footer */
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p {
+    color: #8a8a8a;
+}
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1 {
+    flex-basis: 30%;
+}
+.footer-col-2 {
+    flex: 1;
+    text-align: center ;
+}
+.footer-col-2 .logo-footer {
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3 {
+    flex-basis: 12%;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+.app-logo {
+    margin-top: 20px;
+}
+.app-logo img {
+    width: 140px;
+    cursor: pointer;
+}
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.Copyright {
+    text-align: center;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: var(--white);
+    border-left: 1px solid var(--cultured);
+}
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 80%);
+    border: 3px solid var(--white);
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover { 
+    background: hsl(0, 0%, 70%); 
+}
+.has-scrollbar { padding-bottom: 5px; }
+
+.has-scrollbar::-webkit-scrollbar {
+  width: 12px; /* for vertical scroll */
+  height: 12px; /* for horizontal scroll */
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 3px solid var(--white);
+  border-radius: 20px;
+}
+
+.has-scrollbar:hover::-webkit-scrollbar-thumb { background: hsl(0, 0%, 90%); }
+
+.has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 80%); }
+
+
+@media (max-width:940px) {
+    nav .menu-btn i {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: black;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.7s ease;
+    }
+    #click:checked ~ ul {
+        left: 0%;
+    }
+    nav ul li {
+        margin: 40px 0;
+    }
+    nav ul li a {
+        font-size: 20px;
+        display: block;
+        transition: color 0.6s ease;        
+    }
+    nav ul li a:hover {
+            color: cyan;
+            background: none;
+    }
+    nav ul li a.active {
+            color: cyan;
+            background: none;
+        }
+    nav .logo {
+        font-size: 20px;
+    }
+}
+@media (max-width:1253px) {
+    .btn {
+        width: 35%;
+    }
+}
+@media (max-width:1219px) {
+    .offer-btn {
+        width: 31%;
+    }
+}
+@media (max-width:1024px) {
+    nav .logo {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600; 
+    }
+    .btn {
+        width: 47%;
+        height: 45px;
+    }
+    .offer-btn {
+        width: 40%;
+        height: 42px;
+    }
+    .header {
+        height: 150%;
+    }
+}
+@media (max-width:768px) {
+    .btn {
+        width: 60%;
+        height: 44px;
+    }
+    .offer-btn {
+        width: 54%;
+    }
+    .col-2 h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin: 30px 0;
+    }
+    .col-2 .offer-img {
+        padding: 0px;
+    }
+}
+@media (max-width:425px) {
+    .col-2 h1 {
+        font-size: 30px;
+        line-height: 50px;
+        margin: 30px 0;
+    }
+    .btn {
+        width: 81%;
+    }
+    .offer-btn {
+        width: 71%;
+    }
+}
+@media (max-width:540px) {
+    .btn {
+        width: 84%;
+    }
+    .offer-btn {
+        width: 73%;
+    }
+}
+@media (max-width:820px) {
+    .btn {
+        width: 57%;
+    }
+    .offer-btn {
+        width: 49%;
+    }
+}
+@media (max-width:412px) {
+    .btn {
+        width: 83%;
+    }
+    .offer-btn {
+        width: 72%;
+    }
+}
+@media (max-width:430px) {
+    .btn {
+        width: 82%;
+    }
+    .offer-btn {
+        width: 71%;
+    }
+}
+
+/* Login button */
+
+/* nav .btnlogin-popup {
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin: -8px;
+    transition: .5s;
+}
+nav .btnlogin-popup:hover {
+    color: #162938;
+    background: #fff;
+} */
