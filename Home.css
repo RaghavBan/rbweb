@@ -190,7 +190,9 @@ h4 {
 small {
     color: #555;
 }
-
+.offer .Exclusive-2  {
+    padding-right: 100p;
+}
 /* footer */
 .footer {
     background: #000;
@@ -277,6 +279,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 80%); }
 
+.offer h1, .offer p, .offer-small-text {
+    padding-right: 100px;
+}
+
 
 @media (max-width:940px) {
     nav .menu-btn i {
@@ -316,14 +322,34 @@ body::-webkit-scrollbar-thumb:hover {
         font-size: 20px;
     }
 }
-@media (max-width:1253px) {
+@media (max-width:1326px) {
     .btn {
+        width: 40%;
+    }
+    .header {
+        height: 50%;
+    }
+    .offer-btn {
         width: 35%;
     }
 }
-@media (max-width:1219px) {
+@media (max-width:1192px) {
     .offer-btn {
-        width: 31%;
+        width: 35%;
+    }
+    .btn {
+        width: 38%;
+    }
+}
+@media (max-width:984px) {
+    .btn {
+        width: 45%;
+    }
+    .offer-btn {
+        width: 40%;
+    }
+    .header {
+        height: 50%;
     }
 }
 @media (max-width:1024px) {
@@ -333,11 +359,11 @@ body::-webkit-scrollbar-thumb:hover {
         font-weight: 600; 
     }
     .btn {
-        width: 47%;
+        width: 45%;
         height: 45px;
     }
     .offer-btn {
-        width: 40%;
+        width: 38%;
         height: 42px;
     }
     .header {
@@ -407,6 +433,7 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
+
 /* Login button */
 
 /* nav .btnlogin-popup {
@@ -427,3 +454,5 @@ nav .btnlogin-popup:hover {
     color: #162938;
     background: #fff;
 } */
+
+
